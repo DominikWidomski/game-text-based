@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Text based adventure</title>
+	<link rel="stylesheet" href="">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background: #222;
+			color: #EEE;
+			font-size: 16px;
+			font-family: 'Fira Code';
+		}
+
+		.container {
+			width: 600px;
+			max-width: 100%;
+			padding: 0 10px;
+			margin: 0 auto;
+		}
+
+		.output {
+			margin-bottom: 50vh;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		a:hover {
+			background: #aaa;
+			color: #222;
+		}
+
+		.stage-text {
+			padding: 10px;
+		}
+
+		.actions {
+			padding: 0 10px;
+			margin: 10px;
+			color: #888;
+		}
+
+		.picked {
+			background: #eee;
+			color: #222;
+		}
+
+		.actions + .stage-text {
+			border-top: 1px solid #444;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Text Based Adventure</h1>
+
+		<div class="output"></div>
+	</div>
+
+	<script src="/assets/js/game.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
